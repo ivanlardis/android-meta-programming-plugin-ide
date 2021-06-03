@@ -1,0 +1,13 @@
+<idea-plugin>
+    <id>ru.lardis.LensIdePlugin</id>
+    <name>LensIdePlugin</name>
+    <vendor email="ivan@lardis.ru" url="http://lardis.ru">lardis</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="org.jetbrains">
+        <kotlin.syntheticResolveExtension implementation="ru.lardis.meta.LensResolveExtension"/>
+    </extensions>
+
+</idea-plugin>
